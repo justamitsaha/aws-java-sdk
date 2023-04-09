@@ -19,7 +19,7 @@ public class AwsSqsCreateListDeleteQueue {
         createQueue(sqsClient, queueName);
         getQueueUrl(sqsClient,queueName);
 
-        System.out.println("Do you want to delete the queue ? Enter y/n");
+        System.out.println("Do you want to delete the queue ? Enter y/n ");
         user_input = new Scanner(System.in);
         String userInput = user_input.nextLine();
         if (userInput.equalsIgnoreCase("y")) {
@@ -29,7 +29,7 @@ public class AwsSqsCreateListDeleteQueue {
             System.out.println("Queue stay.");
         }
 
-        System.out.println("Do you want to search for a queue ? Enter y/n");
+        System.out.println("Do you want to search for a queue ? Enter y/n ");
         user_input = new Scanner(System.in);
         userInput = user_input.nextLine();
         if (userInput.equalsIgnoreCase("y")) {
